@@ -1,16 +1,63 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Samys MEGATHREAD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSAS MEGATHREAD</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            background-color: black;
+            color: rgb(128, 0, 128);
+        }
+        a {
+            color: rgb(128, 0, 128);
+        }
+        /* Splash Screen Styles */
+        #splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        #loginButton {
+            font-size: 24px;
+            color: rgb(128, 0, 128);
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 0;
+        }
+        #loginButton:hover {
+            color: rgb(128, 0, 128);
+        }
+    </style>
 </head>
-
-<audio src="song.mp3" autoplay>
-        Your browser does not support the audio element.
-    </audio>
-
 <body>
-    <h1>Samys MEGATHREAD</h1>
+
+    <div id="splash">
+        <button id="loginButton">Login</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>SOSAS MEGATHREAD</h1>
 
     <h2>Software</h2>
     <ul>
@@ -18,6 +65,7 @@
         <li><a href="https://www.reddit.com/r/GenP/wiki/redditgenpguides/#wiki_.2620.FE0F_guide_.232_-_dummy_guide_for_first_timers_genp_.28cc_.2B_genp.29" target="_blank" rel="noopener" download>GenP For Adobe Products (pirate)</a></li>
         <li><a href="https://mega.nz/file/BV9BwRQJ#fQVP8ckzX973sVatAM7nUJoTG1K3UM2EVqWut3fw4_k" target="_blank" rel="noopener" download>RSMB VEGAS/Prem Pro/Affter Effects (pirate)</a></li>
         <li><a href="https://drive.google.com/file/d/1MkRYcvdsLjqVo6o9hHr4THuCtPs1eN-g/view" target="_blank" rel="noopener" download>Borris Sapphire Effects Plugin (pirate)</a></li>
+        <li><a href="https://protonvpn.com/download-windows" target="_blank" rel="noopener" download>Proton VPN</a></li>
         <li><a href="https://www.qbittorrent.org/download" target="_blank" rel="noopener" download>qBittorent</a></li>
         <li><a href="https://www.mediafire.com/file/2lkq67xeoynakct/GoldeenPackV1.psd/file" target="_blank" rel="noopener" download>GoldeenPackV1.psd (photoshop)</a></li>
         <li><a href="https://obsproject.com/" target="_blank" rel="noopener" download>Open Broadcaster Software (OBS)</a></li>
@@ -66,34 +114,37 @@
 
 
 
+    <audio loop id="audioPlayer" src="song.mp3"></audio>
+
+    <script>
+      document.getElementById("loginButton").addEventListener("click", function() {
+          // Hide the splash screen
+          document.getElementById("splash").style.display = "none";
+          // Play the song
+          document.getElementById("audioPlayer").play();
+      });
+  </script>
+
+<style>
+    body {
+        background-image: url('background.png');
+        background-size: 100% 100%; /* Stretches the image to fit the screen */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image */
+        color: white;
+    }
+    a {
+        color: rgb(128, 0, 128);
+        background-color: black; /* Adds a black highlight */
+        padding: 2px 4px; /* Adds padding to make the highlight more visible */
+        text-decoration: none; /* Removes the underline for cleaner text */
+    }
+    a:hover {
+        color: white; /* Optional: Change the link color on hover */
+    }
+</style>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <style>
-        body {
-          background-color: black;
-          color: white;
-        }
-        a {
-          color: rgb(128, 0, 128);
-        }
-    </style>
 </body>
 </html>
